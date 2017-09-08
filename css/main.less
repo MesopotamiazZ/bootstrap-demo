@@ -1,0 +1,393 @@
+/**公共样式**/
+body, h1, h2, h3, h4, h5, h6, hr, p, blockquote, dl, dt, dd, ul, ol, li, pre, form, fieldset, legend, button, input, textarea, th, td { margin:0; padding:0; }
+h1, h2, h3, h4, h5, h6{ font-size:100%; }
+address, cite, dfn, em, var { font-style:normal; }
+code, kbd, pre, samp { font-family:couriernew, courier, monospace; }
+small{ font-size:12px; }
+ul, ol { list-style:none; }
+a { text-decoration:none; }
+a:hover { text-decoration:underline; }
+sup { vertical-align:text-top; }
+sub{ vertical-align:text-bottom; }
+legend { color:#000; }
+fieldset, img { border:0; }
+button, input, select, textarea { font-size:100%; }
+table { border-collapse:collapse; border-spacing:0; }
+
+/**字体图标**/
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../fonts/icomoon.eot?jh4rq');
+  src:  url('../fonts/icomoon.eot?jh4rq#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?jh4rq') format('truetype'),
+    url('../fonts/icomoon.woff?jh4rq') format('woff'),
+    url('../fonts/icomoon.svg?jh4rq#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-business:before {
+  content: "\e900";
+}
+.icon-company-introduction:before {
+  content: "\e901";
+}
+.icon-enterprise-background:before {
+  content: "\e902";
+}
+.icon-hr:before {
+  content: "\e903";
+}
+.icon-join:before {
+  content: "\e904";
+}
+.icon-qq:before {
+  content: "\e905";
+}
+.icon-search:before {
+  content: "\e906";
+}
+.icon-service-field:before {
+  content: "\e907";
+}
+.icon-sina:before {
+  content: "\e908";
+}
+.icon-success-demo:before {
+  content: "\e909";
+}
+.icon-wechat:before {
+  content: "\e90a";
+}
+
+/**main**/
+.header{
+  .navbar{
+    background-color: #ffffff;
+    border: 0;
+    .container{
+      .navbar-header{
+        .navbar-brand{
+          position: relative;
+          top: -7px;
+        }
+      }
+      #nav-list{
+        border: 0;
+        .u1{
+          li{
+            font-size: 12px;
+            text-align: center;
+            a:hover{
+              background-color: rgb(60, 69, 99);
+              color: #ffffff;
+            }
+          }
+        }
+        .u2{
+          li{
+            font-size: 12px;
+            text-align: center;
+            a{
+              position: relative;
+              top: 10px;
+            }
+          }
+        }
+        .navbar-form1{
+          .form-group{
+            .icon-search{
+              position: absolute;
+              top: 5px;
+              right: 20px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar > .container .navbar-brand >img {
+    width: 35px;
+    height: 35px;
+  }
+}
+
+.banner{
+  // height: 500px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  position: relative;
+  top: -20px;
+  img{
+    width: 100%;
+  }
+}
+
+@media (min-width: 840px) {
+  .banner{
+    height: 500px;
+  }
+}
+
+.production-team{
+  height: auto;
+  .container{
+    .head{
+      .col-xs-12{
+        text-align: center;
+        .text1{
+          max-width: 68px;
+          display: block;
+          font-size: 16px;
+          margin: 0 auto;
+          padding: 10px 0;
+          border-top: 2px solid rgb(50, 204, 254)
+        }
+        .text2{
+          max-width: 300px;
+          display: block;
+          font-size: 10px;
+          margin: 0 auto;
+          color: #777;
+        }
+      }
+    }
+    .content{
+      padding: 30px 0 10px;
+      .frame{
+        text-align: center;
+        margin-bottom: 20px;
+        .tx{
+          img{
+            width: 270px;
+            height: 240px;
+          }
+        }
+        .info{
+          width: 270px;
+          height: 220px;
+          margin: 0 auto;
+          color: #777;
+          border: 0.5px solid #cac9c9;
+          span{
+            display: block;
+            padding: 20px 30px;
+          }
+          img{
+            display: block;
+          }
+          a{
+            margin: 0 3px;
+            color: #595757;
+            text-decoration: none;
+            position: relative;
+            top: -7px;
+          }
+        }
+      }
+      .frame:hover{
+        .info{
+          background-color: rgb(50, 204, 254);
+        }
+      }
+    }
+    .foot{
+      .content{
+        padding: 0;
+        text-align: center;
+        .circle{
+          width: 90px;
+          height: 90px;
+          border-radius: 50%;
+          border: 1px solid #777;
+          margin: 0 auto;
+          position: relative;
+          i{
+            position: absolute;
+            top: 36px;
+            left: 36px;
+            font-size: 20px;
+          }
+        }
+        .title{
+          display: block;
+          margin: 40px 0;
+        }
+        .desc{
+          display: block;
+          margin-bottom: 50px;
+          padding: 0 60px;
+          font-size: 12px;
+          color: #777;
+        }
+      }
+    }
+  }
+}
+
+.company-introduction{
+  height: 500px;
+  background-color: #BEBDBD;
+}
+
+.footer{
+  height: 180px;
+  background-color: rgb(60, 69, 99);
+  .container{
+      position: relative;
+      top: 30px;
+    .link{
+      .fleft{
+        display: flex;
+        border-right: 1px solid #777;
+        padding: 0 45px;
+        .list1{
+          flex: 1;
+          text-align: center;
+          span:nth-child(1){
+            font-size: 14px;
+          }
+          span{
+            font-size: 12px;
+            line-height: 20px;
+            display: block;
+            a{
+              text-decoration: none;
+              color: #f0f0f0;
+            }
+          }
+        }
+      }
+      .fright{
+        display: flex;
+        .list2{
+          flex: 1;
+          text-align: left;
+          margin-left: 30px;
+          span{
+            font-size: 12px;
+            line-height: 20px;
+            display: block;
+            color: #f0f0f0;
+          }
+          img{
+            width: 100px;
+            height: 100px;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+/**bootstrap拓展样式**/
+
+.navbar-form1 {
+  position: relative;
+  top: 15px;
+  padding: 10px 15px;
+  margin-top: 8px;
+  margin-right: -15px;
+  margin-bottom: 8px;
+  margin-left: -15px;
+  border-top: 1px solid transparent;
+  border-bottom: 1px solid transparent;
+  -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, .1), 0 1px 0 rgba(255, 255, 255, .1);
+          box-shadow: inset 0 1px 0 rgba(255, 255, 255, .1), 0 1px 0 rgba(255, 255, 255, .1);
+}
+// .navbar-form1::after {
+//   content: "\e906";
+// }
+@media (min-width: 768px) {
+  .navbar-form1 .form-group {
+    display: inline-block;
+    margin-bottom: 0;
+    vertical-align: middle;
+  }
+  .navbar-form1 .form-control {
+    display: inline-block;
+    width: 150px;
+    height: 20px;
+    border-radius: 10px;
+    vertical-align: middle;
+  }
+  .navbar-form1 .form-control-static {
+    display: inline-block;
+  }
+  .navbar-form1 .input-group {
+    display: inline-table;
+    vertical-align: middle;
+    position: relative;
+  }
+  .navbar-form1 .input-group .input-group-addon,
+  .navbar-form1 .input-group .input-group-btn,
+  .navbar-form1 .input-group .form-control {
+    width: auto;
+  }
+  .navbar-form1 .input-group > .form-control {
+    width: 100%;
+  }
+  .navbar-form1 .control-label {
+    margin-bottom: 0;
+    vertical-align: middle;
+  }
+  .navbar-form1 .radio,
+  .navbar-form1 .checkbox {
+    display: inline-block;
+    margin-top: 0;
+    margin-bottom: 0;
+    vertical-align: middle;
+  }
+  .navbar-form1 .radio label,
+  .navbar-form1 .checkbox label {
+    padding-left: 0;
+  }
+  .navbar-form1 .radio input[type="radio"],
+  .navbar-form1 .checkbox input[type="checkbox"] {
+    position: relative;
+    margin-left: 0;
+  }
+  .navbar-form1 .has-feedback .form-control-feedback {
+    top: 0;
+  }
+}
+@media (max-width: 767px) {
+  .navbar-form1 .form-group {
+    margin-bottom: 5px;
+  }
+  .navbar-form1 .form-group:last-child {
+    margin-bottom: 0;
+  }
+}
+@media (min-width: 768px) {
+  .navbar-form1 {
+    width: auto;
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-right: 0;
+    margin-left: 0;
+    border: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+  }
+}
